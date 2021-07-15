@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import Navbar from './components/Navbar';
 import App from './components/App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
