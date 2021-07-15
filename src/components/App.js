@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
+/* eslint-disable no-unused-vars */
 import styled from 'styled-components';
-import { getPinnedProjects, getScreenshot, getRateLimit } from '../API';
-
-getRateLimit();
+import { useEffect, useState } from 'react';
+import { getPinnedProjects, getScreenshots } from '../API';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -18,16 +17,9 @@ const App = () => {
   useEffect(() => {
     getPinnedProjects().then((projects) => {
       setProjects(projects.map((project) => project));
-      setScreenshots(projects.map((project) => getScreenshot(project.node.name)));
+      setScreenshots(getScreenshots(projects));
     });
   }, []);
-
-  if (projects.length === 0 || screenshots.length === 0) {
-    console.log('Loading');
-  } else {
-    console.log(projects);
-    console.log(screenshots);
-  }
 
   return (
     <Container>
@@ -35,6 +27,5 @@ const App = () => {
     </Container>
   );
 };
-export default App;
 
-// https://api.github.com/repos/RyelBanfield/${project.node.name}/contents/Screenshot.png
+export default App;

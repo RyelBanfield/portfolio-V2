@@ -31,16 +31,22 @@ export const getPinnedProjects = async () => {
   return pinnedProjects.data.user.pinnedItems.edges;
 };
 
-export const getScreenshot = async (repoName) => {
-  const fileResponse = await fetch(`https://api.github.com/repos/RyelBanfield/${repoName}/contents/Screenshot.png`);
-  const file = await fileResponse.json();
-  const blobResponse = await fetch(`https://api.github.com/repos/RyelBanfield/${repoName}/git/blobs/${file.sha}`);
-  const blob = await blobResponse.json();
-  console.log(window.atob(`${blob.content}`));
-};
+export const getScreenshots = async (projects) => {
+  const projectNames = projects.map((project) => project.node.name);
+  const fileUrls = projectNames.map((projectName) => `https://api.github.com/repos/RyelBanfield/${projectName}/contents/Screenshot.png`);
 
-export const getRateLimit = async () => {
-  const response = await fetch('https://api.github.com/rate_limit');
-  const rateLimit = await response.json();
-  console.log(rateLimit);
+  let screenshotUrls = await fileUrls.map(async (url) => {
+    const fileResponse = await fetch(url, {
+      method: 'GET',
+      headers: {
+        Authorization: 'bearer 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',
+      },
+    });
+    const screenshotUrl = await fileResponse.json();
+    return screenshotUrl.download_url;
+  });
+
+  screenshotUrls = await Promise.all(screenshotUrls);
+  console.log(screenshotUrls);
+  return screenshotUrls;
 };
