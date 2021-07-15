@@ -27,7 +27,7 @@ export const getPinnedProjects = async () => {
     }),
   });
   const pinnedProjects = await response.json();
-  // console.log(pinnedProjects.data.user.pinnedItems.edges);
+  console.log(pinnedProjects.data.user.pinnedItems.edges);
   return pinnedProjects.data.user.pinnedItems.edges;
 };
 

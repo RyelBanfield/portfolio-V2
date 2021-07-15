@@ -14,9 +14,17 @@ const App = () => {
   const [projects, setProjects] = useState([]);
   const [screenshots, setScreenshots] = useState([]);
 
+  // const addUrls = () => {
+  //   const newProjects = projects.map((project, index) => ({
+  //     ...project.node, screenshot: screenshots[index],
+  //   }));
+  // console.log(newProjects);
+  // return newProjects;
+  // };
+
   useEffect(() => {
     getPinnedProjects().then((projects) => {
-      setProjects(projects.map((project) => project));
+      setProjects(projects);
       setScreenshots(getScreenshots(projects));
     });
   }, []);
