@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import { getPinnedProjects, getScreenshots } from '../API';
+import Projects from './Projects';
 
 const Container = styled.div`
   min-height: 100vh;
@@ -34,7 +35,7 @@ const App = () => {
 
   return (
     <Container>
-      <h1>Hello World</h1>
+      <Projects ProjectData={projects} />
     </Container>
   );
 };
