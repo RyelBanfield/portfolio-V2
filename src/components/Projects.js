@@ -1,26 +1,20 @@
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Project from './Project';
 
-const Container = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Projects = ({ ProjectData }) => (
-  <Container>
-    {ProjectData.map((project) => (
-      <>
-        <p key={project.name}>{project.name}</p>
-      </>
+const Projects = ({ ProjectsData }) => (
+  <>
+    {ProjectsData.map((project) => (
+      <Project ProjectData={project} key={project.name} />
     ))}
-  </Container>
+  </>
 );
 
+Projects.defaultProps = {
+  ProjectsData: [],
+};
+
 Projects.propTypes = {
-  ProjectData: PropTypes.arrayOf.isRequired,
+  ProjectsData: PropTypes.arrayOf(PropTypes.objectOf),
 };
 
 export default Projects;

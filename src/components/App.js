@@ -1,14 +1,6 @@
-import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import { getPinnedProjects, getScreenshots } from '../API';
 import Projects from './Projects';
-
-const Container = styled.div`
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 
 const App = () => {
   const [projects, setProjects] = useState([]);
@@ -34,9 +26,9 @@ const App = () => {
   }, [projects]);
 
   return (
-    <Container>
-      <Projects ProjectData={projects} />
-    </Container>
+    <>
+      <Projects ProjectsData={projects} />
+    </>
   );
 };
 
