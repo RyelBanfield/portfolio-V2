@@ -11,32 +11,26 @@ const Container = styled.div`
 
 const App = () => {
   const [projects, setProjects] = useState([]);
-  const [screenshots, setScreenshots] = useState([]);
-  const [newProjects, setNewProjects] = useState([]);
 
-  const addUrls = async (projects, screenshots) => {
-    const newProjects = projects.map((project, index) => ({
-      ...project.node, screenshot: screenshots[index],
+  const addUrls = async (projects, urls) => {
+    const projectsWithUrls = projects.map((project, index) => ({
+      ...project.node, screenshotUrl: urls[index],
     }));
-    // console.log(newProjects);
-    return newProjects;
+    // console.log(projectsWithUrls);
+    return projectsWithUrls;
   };
 
   useEffect(() => {
     getPinnedProjects().then((projects) => {
-      setProjects(projects);
-      getScreenshots(projects).then((screenshots) => {
-        setScreenshots(screenshots);
-        addUrls(projects, screenshots).then((newProjects) => setNewProjects(newProjects));
+      getScreenshots(projects).then((urls) => {
+        addUrls(projects, urls).then((projectsWithUrls) => setProjects(projectsWithUrls));
       });
     });
   }, []);
 
   useEffect(() => {
     console.log(projects);
-    console.log(screenshots);
-    console.log(newProjects);
-  }, [projects, screenshots, newProjects]);
+  }, [projects]);
 
   return (
     <Container>
