@@ -1,5 +1,5 @@
 const Header = () => (
-  <div>
+  <div className>
     Hello from Header
   </div>
 );

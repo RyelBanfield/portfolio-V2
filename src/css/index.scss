@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$main-font: 'Roboto', sans-serif;
+
+$dark-gray: #1a1a1d;
+$gray: #4e4e50;
+$dark-red: #6f2232;
+$pink: #950740;
+$bright-red: #c3073f;
+$white: #dcdde1;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // outline: 1px solid $white;
+}
+
+body {
+  background-color: $dark-gray;
+  color: $white;
+  font-family: $main-font;
+  font-size: 100%;
+}
