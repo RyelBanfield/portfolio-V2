@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import { getPinnedProjects, getScreenshots } from '../API';
@@ -13,21 +12,31 @@ const Container = styled.div`
 const App = () => {
   const [projects, setProjects] = useState([]);
   const [screenshots, setScreenshots] = useState([]);
+  const [newProjects, setNewProjects] = useState([]);
 
-  // const addUrls = () => {
-  //   const newProjects = projects.map((project, index) => ({
-  //     ...project.node, screenshot: screenshots[index],
-  //   }));
-  // console.log(newProjects);
-  // return newProjects;
-  // };
+  const addUrls = async (projects, screenshots) => {
+    const newProjects = projects.map((project, index) => ({
+      ...project.node, screenshot: screenshots[index],
+    }));
+    // console.log(newProjects);
+    return newProjects;
+  };
 
   useEffect(() => {
     getPinnedProjects().then((projects) => {
       setProjects(projects);
-      setScreenshots(getScreenshots(projects));
+      getScreenshots(projects).then((screenshots) => {
+        setScreenshots(screenshots);
+        addUrls(projects, screenshots).then((newProjects) => setNewProjects(newProjects));
+      });
     });
   }, []);
+
+  useEffect(() => {
+    console.log(projects);
+    console.log(screenshots);
+    console.log(newProjects);
+  }, [projects, screenshots, newProjects]);
 
   return (
     <Container>
