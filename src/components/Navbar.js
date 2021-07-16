@@ -1,12 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const links = [
-  { name: 'Home', path: '/' },
+  { name: 'Github', url: 'https://github.com/RyelBanfield' },
+  { name: 'Linkedin', url: 'https://www.linkedin.com/in/ryel-banfield/' },
+  { name: 'Twitter', url: 'https://twitter.com/RyelBanfield' },
+  { name: 'Medium', url: 'https://ryelbanfield.medium.com/' },
 ];
 
-const Nav = styled.nav`
+const myLinks = styled.div`
   ul {
     display: flex;
     justify-content: center;
@@ -20,21 +22,18 @@ const Nav = styled.nav`
     color: #000;
     text-decoration: none;
   }
-
-  .activeLink {
-  }
 `;
 
 const Navbar = () => (
-  <Nav>
+  <myLinks>
     <ul>
       {links.map((link) => (
         <li key={link.name}>
-          <NavLink exact to={link.path} activeClassName="activeLink">{link.name}</NavLink>
+          <a href={link.url}>{link.name}</a>
         </li>
       ))}
     </ul>
-  </Nav>
+  </myLinks>
 );
 
 export default Navbar;

@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
 import { getPinnedProjects, getScreenshots } from '../API';
+import Navbar from './Navbar';
+import Header from './Header';
 import Projects from './Projects';
+import About from './About';
+import Contact from './Contact';
+import Footer from './Footer';
 
 const App = () => {
   const [projects, setProjects] = useState([]);
@@ -27,7 +32,12 @@ const App = () => {
 
   return (
     <>
+      <Navbar />
+      <Header />
       <Projects ProjectsData={projects} />
+      <About />
+      <Contact />
+      <Footer />
     </>
   );
 };
