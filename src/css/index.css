@@ -195,6 +195,14 @@ h3 {
   margin: 5px 15px;
 }
 
+.project {
+  max-width: 40%;
+}
+
+.screenshot {
+  max-width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;

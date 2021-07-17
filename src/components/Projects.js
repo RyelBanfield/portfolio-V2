@@ -1,20 +1,38 @@
-import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
+import { getPinnedProjects, getScreenshots } from '../API';
 import Project from './Project';
 
-const Projects = ({ ProjectsData }) => (
-  <div className="projects-container">
-    {ProjectsData.map((project) => (
-      <Project ProjectData={project} key={project.name} />
-    ))}
-  </div>
-);
+const Projects = () => {
+  const [projects, setProjects] = useState([]);
 
-Projects.defaultProps = {
-  ProjectsData: [],
-};
+  const addUrls = async (projects, urls) => {
+    const projectsWithUrls = projects.map((project, index) => ({
+      ...project.node, screenshotUrl: urls[index],
+    }));
+    // console.log(projectsWithUrls);
+    return projectsWithUrls;
+  };
 
-Projects.propTypes = {
-  ProjectsData: PropTypes.arrayOf(PropTypes.objectOf),
+  useEffect(() => {
+    getPinnedProjects().then((projects) => {
+      getScreenshots(projects).then((urls) => {
+        addUrls(projects, urls).then((projectsWithUrls) => setProjects(projectsWithUrls));
+      });
+    });
+  }, []);
+
+  useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log(projects);
+  }, [projects]);
+
+  return (
+    <div className="projects-container">
+      {projects.map((project) => (
+        <Project ProjectData={project} key={project.name} />
+      ))}
+    </div>
+  );
 };
 
 export default Projects;
