@@ -1,0 +1,89 @@
+header {
+  margin-bottom: 150px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  margin-top: 125px;
+}
+
+.image {
+  width: 25%;
+  max-width: 300px;
+  background-image: url('/src/assets/ProPic.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset,
+    rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset,
+    rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px,
+    rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px,
+    rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(19, 16, 16, 0.09) 0 32px 16px;
+  aspect-ratio: 1 / 1;
+}
+
+.intro {
+  width: 50%;
+  text-align: center;
+  margin: 0 50px;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    width: min-content;
+    font-size: 2rem;
+    overflow: hidden;
+    border-right: 0.15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+    animation: typing 3s steps(40, end), blink-cursor 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-cursor {
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: white;
+    }
+  }
+}
+
+.my-stack {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.stack-item {
+  list-style: none;
+  margin: 10px 15px;
+}

@@ -1,14 +1,9 @@
 import { useEffect, useState } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { getPinnedProjects, getScreenshots } from '../API';
-import Navbar from './Navbar';
-// import Header from './Header';
+import Header from './Header';
 // import Projects from './Projects';
-// import About from './About';
-// import Contact from './Contact';
-// import Footer from './Footer';
 
-const App = () => {
+const Home = () => {
   const [projects, setProjects] = useState([]);
 
   const addUrls = async (projects, urls) => {
@@ -32,17 +27,11 @@ const App = () => {
   }, [projects]);
 
   return (
-    <>
-      <Router>
-        <Navbar />
-      </Router>
-      {/* <Header />
-      <Projects ProjectsData={projects} />
-      <About />
-      <Contact />
-      <Footer /> */}
-    </>
+    <main>
+      <Header />
+      {/* <Projects ProjectsData={projects} /> */}
+    </main>
   );
 };
 
-export default App;
+export default Home;

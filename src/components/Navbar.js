@@ -1,12 +1,16 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
 import {
   FaGithub, FaLinkedin, FaTwitter, FaMedium, FaTimes, FaBars,
 } from 'react-icons/fa';
+
+const pages = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Contact', path: '/contact' },
+];
 
 const links = [
   { name: 'Github', url: 'https://github.com/RyelBanfield', icon: <FaGithub /> },
@@ -15,59 +19,39 @@ const links = [
   { name: 'Medium', url: 'https://ryelbanfield.medium.com/', icon: <FaMedium /> },
 ];
 
-const MyLinks = styled.div`
-  height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  ul {
-    display: flex;
-    justify-content: center;
-  }
-
-  li {
-    list-style: none;
-    margin: 20px;
-  }
-
-  a {
-    color: #dcdde1;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
-    display: flex;
-  }
-
-  i {
-    margin: 0 5px;
-  }
-`;
-
 const Navbar = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
   return (
-    <MyLinks>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-          <div className="menu-icon" onClick={handleClick}>
-            {click ? <i><FaTimes /></i> : <i><FaBars /></i>}
-          </div>
-        </li>
+    <nav>
+
+      <div className="menu-icon" onClick={handleClick}>
+        <i>{click ? <FaTimes /> : <FaBars />}</i>
+      </div>
+
+      <ul className={click ? 'nav-links-active' : 'nav-links'}>
+        {pages.map((page) => (
+          <li className="nav-item" key={page.name}>
+            <Link to={page.path} className="nav-link" onClick={closeMobileMenu}>
+              {page.name}
+            </Link>
+          </li>
+        ))}
+
         {links.map((link) => (
-          <li key={link.name}>
-            <a href={link.url}>
+          <li className="nav-item" key={link.name}>
+            <a className="nav-link" href={link.url} target="blank" onClick={closeMobileMenu}>
               {link.name}
-              <i>{link.icon}</i>
+              <i className="nav-icon">{link.icon}</i>
             </a>
           </li>
         ))}
       </ul>
-    </MyLinks>
+
+    </nav>
   );
 };
 

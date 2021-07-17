@@ -1,15 +1,222 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-links {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-icon {
+  margin: 0 5px;
+}
+
+footer {
+  min-width: 100%;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: #000;
+}
+
+.footer-links {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-item {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-icon {
+  font-size: 1.15rem;
+}
+
+header {
+  margin-bottom: 150px;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 125px;
+}
+
+.image {
+  width: 25%;
+  max-width: 300px;
+  background-image: url("/src/assets/ProPic.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(19, 16, 16, 0.09) 0 32px 16px;
+          box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(19, 16, 16, 0.09) 0 32px 16px;
+  aspect-ratio: 1 / 1;
+}
+
+.intro {
+  width: 50%;
+  text-align: center;
+  margin: 0 50px;
+}
+
+.intro h1 {
+  font-size: 2rem;
+}
+
+.intro h2 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  font-size: 2rem;
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  -webkit-animation: typing 3s steps(40, end), blink-cursor 0.75s step-end infinite;
+          animation: typing 3s steps(40, end), blink-cursor 0.75s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes blink-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+@keyframes blink-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.my-stack {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.stack-item {
+  list-style: none;
+  margin: 10px 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 0;
+  outline: 1px solid black;
+  outline: 0;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
 }
 
+html,
 body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
   background-color: #1a1a1d;
   color: #dcdde1;
-  font-family: "Roboto", sans-serif;
-  font-size: 100%;
 }
 /*# sourceMappingURL=index.css.map */
