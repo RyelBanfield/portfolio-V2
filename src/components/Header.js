@@ -4,6 +4,7 @@ import SASSSVG from '../assets/images/Sass.svg';
 import JavaScriptSVG from '../assets/images/JavaScript.svg';
 import BootstrapSVG from '../assets/images/Bootstrap.svg';
 import ReactSVG from '../assets/images/React.svg';
+import ReduxSVG from '../assets/images/Redux.svg';
 import RubySVG from '../assets/images/Ruby.svg';
 import RubyOnRailsSVG from '../assets/images/Ruby_on_Rails.svg';
 import SQLiteSVG from '../assets/images/SQLite.svg';
@@ -11,6 +12,7 @@ import PostgreSQLSVG from '../assets/images/PostgreSQL.svg';
 import HerokuSVG from '../assets/images/Heroku.svg';
 import NetlifySVG from '../assets/images/Netlify.svg';
 import NodeSVG from '../assets/images/Node.svg';
+import ExpressSVG from '../assets/images/Express.svg';
 import MongoSVG from '../assets/images/MongoDB.svg';
 
 const technologies = {
@@ -31,7 +33,9 @@ const technologies = {
     { name: 'Netlify', src: NetlifySVG },
   ],
   learning: [
+    { name: 'Redux', src: ReduxSVG },
     { name: 'NodeJs', src: NodeSVG },
+    { name: 'Express', src: ExpressSVG },
     { name: 'Mongo', src: MongoSVG },
   ],
 };
