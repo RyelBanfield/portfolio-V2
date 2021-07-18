@@ -20,6 +20,7 @@ const Footer = () => (
         </li>
       ))}
     </ul>
+    <p className="copyright">Ryel Banfield © 2021</p>
   </footer>
 );
 

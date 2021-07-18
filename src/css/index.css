@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 nav {
   width: 100%;
-  height: 10vh;
+  min-height: 100px;
   background-color: #000;
 }
 
@@ -40,15 +40,22 @@ nav {
 }
 
 footer {
-  min-width: 100%;
-  height: 10vh;
-  position: fixed;
-  bottom: 0;
+  width: 100%;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #000;
 }
 
 .footer-links {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +69,7 @@ footer {
 
 .footer-item {
   list-style: none;
-  margin: 0 20px;
+  margin: 0 18px;
 }
 
 .footer-link {
@@ -77,7 +84,13 @@ footer {
   font-size: 1.15rem;
 }
 
-.header-top {
+.copyright {
+  color: #4e4e50;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,8 +136,8 @@ footer {
   white-space: nowrap;
   margin: 2rem auto;
   letter-spacing: 0.1em;
-  -webkit-animation: typing 3s steps(40, end), blink-cursor 0.75s step-end infinite;
-          animation: typing 3s steps(40, end), blink-cursor 0.75s step-end infinite;
+  -webkit-animation: typing 4s steps(40, end), blink-cursor 0.75s step-end infinite;
+          animation: typing 4s steps(40, end), blink-cursor 0.75s step-end infinite;
 }
 
 @-webkit-keyframes typing {
@@ -165,6 +178,19 @@ footer {
   }
 }
 
+.intro .projects-btn {
+  display: inline-block;
+  line-height: 1.5;
+  color: #1a1a1d;
+  text-decoration: none;
+  background-color: #c3073f;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  margin: 20px 0;
+}
+
 .my-stack {
   width: 50%;
   margin: 20px auto;
@@ -195,12 +221,62 @@ h3 {
   margin: 5px 15px;
 }
 
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 25px 0 100px;
+}
+
 .project {
-  max-width: 40%;
+  width: 40%;
+  max-width: 500px;
+  margin: 40px 0;
 }
 
 .screenshot {
   max-width: 100%;
+}
+
+.project-info {
+  height: 40%;
+  max-height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.btn {
+  display: inline-block;
+  line-height: 1.5;
+  color: #1a1a1d;
+  text-decoration: none;
+  background-color: #c3073f;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
 }
 
 * {
@@ -217,11 +293,24 @@ h3 {
   font-size: 100%;
 }
 
-html,
 body {
-  min-height: 100vh;
+  height: 100vh;
   font-family: "Roboto", sans-serif;
   background-color: #1a1a1d;
   color: #dcdde1;
+}
+
+#root {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=index.css.map */

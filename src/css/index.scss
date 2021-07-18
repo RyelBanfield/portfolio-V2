@@ -1,6 +1,7 @@
 @import './partials/navbar';
 @import './partials/footer';
-@import './partials/header';
+@import './partials/home';
+@import './partials/projects';
 @import './partials/project';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
@@ -27,10 +28,16 @@ $white: #dcdde1;
   font-size: 100%;
 }
 
-html,
 body {
-  min-height: 100vh;
+  height: 100vh;
   font-family: $main-font;
   background-color: $dark-gray;
   color: $white;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

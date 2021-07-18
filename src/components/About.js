@@ -1,7 +1,7 @@
 const About = () => (
-  <div>
+  <main>
     Hello from About
-  </div>
+  </main>
 );
 
 export default About;

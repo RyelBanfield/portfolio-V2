@@ -1,12 +1,17 @@
 import PropTypes from 'prop-types';
 
-// Create a card component that will be used to render a single project
-
 const Project = ({ ProjectData }) => (
   <div className="project">
     <img className="screenshot" src={ProjectData.screenshotUrl} alt={ProjectData.name} />
-    <div className="project-name">
-      <h2>{ProjectData.name}</h2>
+    <div className="project-info">
+      <div className="information">
+        <h2>{ProjectData.name}</h2>
+        <p>{ProjectData.description}</p>
+      </div>
+      <div className="project-links">
+        <a className="btn" href={ProjectData.url} target="_blank" rel="noreferrer">View Code</a>
+        <a className="btn" href={ProjectData.homepageUrl}>View Live Demo</a>
+      </div>
     </div>
   </div>
 );

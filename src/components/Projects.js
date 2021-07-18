@@ -27,11 +27,11 @@ const Projects = () => {
   }, [projects]);
 
   return (
-    <div className="projects-container">
+    <main className="projects-container">
       {projects.map((project) => (
         <Project ProjectData={project} key={project.name} />
       ))}
-    </div>
+    </main>
   );
 };
 
