@@ -4,7 +4,7 @@ const Project = ({ ProjectData }) => (
   <div className="project">
     <img className="screenshot" src={ProjectData.screenshotUrl} alt={ProjectData.name} />
     <div className="project-info">
-      <div className="information">
+      <div className="info">
         <h2>{ProjectData.name}</h2>
         <p>{ProjectData.description}</p>
       </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { CircularProgress } from '@material-ui/core';
 import { getPinnedProjects, getScreenshots } from '../API';
 import Project from './Project';
 
@@ -21,10 +22,18 @@ const Projects = () => {
     });
   }, []);
 
-  useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log(projects);
-  }, [projects]);
+  // useEffect(() => {
+  //   // eslint-disable-next-line no-console
+  //   console.log(projects);
+  // }, [projects]);
+
+  if (projects.length === 0) {
+    return (
+      <div className="loading-screen">
+        <CircularProgress color="secondary" />
+      </div>
+    );
+  }
 
   return (
     <main className="projects-container">

@@ -1,5 +1,5 @@
 const About = () => (
-  <main>
+  <main className="about">
     Hello from About
   </main>
 );
