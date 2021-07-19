@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 nav {
-  width: 100%;
+  min-width: 100%;
   min-height: 95px;
   background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-icon {
@@ -404,8 +413,8 @@ label {
 }
 
 input {
-  font-size: 1.5rem;
-  padding: 5px;
+  font-size: 1.25rem;
+  padding: 10px;
   margin-bottom: 0.75rem;
 }
 
@@ -413,9 +422,9 @@ textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 250px;
-  max-height: 500px;
-  font-size: 1.5rem;
-  padding: 5px;
+  max-height: 250px;
+  font-size: 1.25rem;
+  padding: 10px;
   margin-bottom: 0.75rem;
 }
 
@@ -460,15 +469,17 @@ button {
   font-size: 100%;
 }
 
+html,
 body {
-  height: 100vh;
-  font-family: "Roboto", sans-serif;
-  background-color: #1a1a1d;
-  color: #dcdde1;
+  width: 100%;
+  height: 100%;
 }
 
 #root {
-  height: 100%;
+  min-height: 100vh;
+  background-color: #1a1a1d;
+  font-family: "Roboto", sans-serif;
+  color: #dcdde1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

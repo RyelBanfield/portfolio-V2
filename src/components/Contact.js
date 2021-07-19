@@ -28,6 +28,14 @@ const Contact = () => {
         </p>
       </div>
       <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          required
+        />
         <label htmlFor="email">
           Your Email Address
         </label>
@@ -35,6 +43,8 @@ const Contact = () => {
           id="email"
           type="email"
           name="email"
+          placeholder="Email"
+          required
         />
         <ValidationError
           prefix="Email"
@@ -44,6 +54,8 @@ const Contact = () => {
         <textarea
           id="message"
           name="message"
+          placeholder="Message"
+          required
         />
         <ValidationError
           prefix="Message"
