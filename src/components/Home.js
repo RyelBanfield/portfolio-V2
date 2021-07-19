@@ -58,7 +58,7 @@ const Home = () => (
       <ul className="stack love">
         {technologies.love.map((technology) => (
           <li className="stack-item" key={technology.name}>
-            <img src={technology.src} alt={technology.name} />
+            <img className="stack-image" src={technology.src} alt={technology.name} />
           </li>
         ))}
       </ul>
@@ -66,7 +66,7 @@ const Home = () => (
       <ul className="stack know">
         {technologies.know.map((technology) => (
           <li className="stack-item" key={technology.name}>
-            <img src={technology.src} alt={technology.name} />
+            <img className="stack-image" src={technology.src} alt={technology.name} />
           </li>
         ))}
       </ul>
@@ -74,7 +74,7 @@ const Home = () => (
       <ul className="stack learning">
         {technologies.learning.map((technology) => (
           <li className="stack-item" key={technology.name}>
-            <img src={technology.src} alt={technology.name} />
+            <img className="stack-image" src={technology.src} alt={technology.name} />
           </li>
         ))}
       </ul>

@@ -91,6 +91,8 @@ footer {
 }
 
 .header {
+  width: 50%;
+  min-width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,12 +102,12 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 25px;
+  margin: auto;
 }
 
 .image {
   width: 25%;
-  max-width: 300px;
+  max-width: 275px;
   background-image: url("/src/assets/ProPic.png");
   background-position: center;
   background-size: cover;
@@ -117,6 +119,7 @@ footer {
 
 .intro {
   width: 50%;
+  max-width: 620px;
   text-align: center;
   margin: 0 50px;
 }
@@ -234,7 +237,7 @@ h3 {
 }
 
 .projects-header {
-  margin-top: 5%;
+  margin-top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +281,7 @@ h3 {
 .project {
   width: 40%;
   max-width: 500px;
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 .screenshot {
@@ -286,8 +289,8 @@ h3 {
 }
 
 .project-info {
-  height: 40%;
-  max-height: 125px;
+  height: 100%;
+  max-height: 175px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,6 +301,17 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.info h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.info p {
+  font-size: 1.05rem;
+  margin: 10px 0;
 }
 
 .project-links {

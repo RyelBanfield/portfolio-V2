@@ -1,7 +1,7 @@
 .project {
   width: 40%;
   max-width: 500px;
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 .screenshot {
@@ -9,11 +9,24 @@
 }
 
 .project-info {
-  height: 40%;
-  max-height: 125px;
+  height: 100%;
+  max-height: 175px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.info {
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 1.05rem;
+    margin: 10px 0;
+  }
 }
 
 .project-links {

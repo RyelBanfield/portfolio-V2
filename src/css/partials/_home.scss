@@ -1,13 +1,15 @@
 .header {
+  width: 50%;
+  min-width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin: auto;
 }
 
 .image {
   width: 25%;
-  max-width: 300px;
+  max-width: 275px;
   background-image: url('/src/assets/ProPic.png');
   background-position: center;
   background-size: cover;
@@ -26,6 +28,7 @@
 
 .intro {
   width: 50%;
+  max-width: 620px;
   text-align: center;
   margin: 0 50px;
 
