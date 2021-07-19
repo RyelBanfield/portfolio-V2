@@ -37,9 +37,20 @@ const Projects = () => {
 
   return (
     <main className="projects-container">
-      {projects.map((project) => (
-        <Project ProjectData={project} key={project.name} />
-      ))}
+      <div className="projects-header">
+        <h1>My Projects 🚀</h1>
+        <br />
+        <p>
+          Fetched from my 📌 repos on
+          {' '}
+          <a href="https://github.com/RyelBanfield" target="_blank" rel="noreferrer">Github</a>
+        </p>
+      </div>
+      <div className="projects-list">
+        {projects.map((project) => (
+          <Project ProjectData={project} key={project.name} />
+        ))}
+      </div>
     </main>
   );
 };

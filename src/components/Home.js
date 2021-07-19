@@ -46,7 +46,7 @@ const Home = () => (
     <div className="header">
       <div className="image" />
       <div className="intro">
-        <h1>Ryel Banfield</h1>
+        <h1>Ryel Banfield 👨‍💻</h1>
         <h2>Full Stack Web Developer</h2>
         <p>Passionate about innovation, solving problems, seeing the world and working remotely.</p>
         <Link to="/projects" className="projects-btn">View My Work</Link>

@@ -233,7 +233,37 @@ h3 {
           align-items: center;
 }
 
-.projects-container {
+.projects-header {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-header h1 {
+  font-size: 2rem;
+}
+
+.projects-header p {
+  font-size: 1.5rem;
+}
+
+.projects-header a {
+  color: #c3073f;
+  text-decoration: none;
+}
+
+.projects-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,6 +319,24 @@ h3 {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
+}
+
+.about {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.about h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.25em;
+  margin-bottom: 20px;
 }
 
 * {
