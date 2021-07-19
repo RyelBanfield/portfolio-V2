@@ -10,7 +10,7 @@ const Project = ({ ProjectData }) => (
       </div>
       <div className="project-links">
         <a className="btn" href={ProjectData.url} target="_blank" rel="noreferrer">View Code</a>
-        <a className="btn" href={ProjectData.homepageUrl}>View Live Demo</a>
+        <a className="btn" href={ProjectData.homepageUrl} target="_blank" rel="noreferrer">View Live Demo</a>
       </div>
     </div>
   </div>
