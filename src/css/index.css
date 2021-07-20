@@ -166,7 +166,7 @@ footer {
 }
 
 .image-div {
-  width: 30%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +179,7 @@ footer {
 }
 
 .image {
-  width: 80%;
+  width: 55%;
   background-image: url("/src/assets/ProPic.png");
   background-position: center;
   background-size: cover;
@@ -190,7 +190,7 @@ footer {
 }
 
 .intro {
-  width: 70%;
+  width: 50%;
   text-align: center;
 }
 
@@ -298,6 +298,9 @@ h3 {
 }
 
 @media (max-width: 1440px) {
+  .header {
+    width: 65%;
+  }
   .intro h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -326,6 +329,18 @@ h3 {
 }
 
 @media (max-width: 1024px) {
+  .header {
+    width: 80%;
+  }
+  .image-div {
+    width: 50%;
+  }
+  .image {
+    width: 60%;
+  }
+  .intro {
+    width: 50%;
+  }
   .intro h1 {
     font-size: 1.75rem;
   }
