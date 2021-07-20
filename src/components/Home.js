@@ -44,7 +44,9 @@ const technologies = {
 const Home = () => (
   <main className="home">
     <div className="header">
-      <div className="image" />
+      <div className="image-div">
+        <div className="image" />
+      </div>
       <div className="intro">
         <h1>Ryel Banfield 👨‍💻</h1>
         <h2>Full Stack Web Developer</h2>

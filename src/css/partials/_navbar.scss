@@ -1,7 +1,7 @@
 nav {
-  min-width: 100%;
-  min-height: 95px;
+  min-height: 6rem;
   background-color: #000;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,15 +12,12 @@ nav {
 }
 
 .nav-links {
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .nav-item {
   list-style: none;
-  margin: 0 20px;
+  margin: 0 1rem;
 }
 
 .nav-link {
@@ -31,4 +28,10 @@ nav {
 
 .nav-icon {
   margin: 0 5px;
+}
+
+@media (max-width: 1024px) {
+  .nav-item {
+    margin: 0 15px;
+  }
 }

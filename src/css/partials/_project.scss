@@ -1,7 +1,7 @@
 .project {
   width: 40%;
   max-width: 500px;
-  margin: 60px 0;
+  margin-bottom: 100px;
 }
 
 .screenshot {
@@ -17,6 +17,7 @@
 }
 
 .info {
+
   h2 {
     font-size: 1.25rem;
     font-weight: 600;
@@ -25,7 +26,6 @@
 
   p {
     font-size: 1.05rem;
-    margin: 10px 0;
   }
 }
 
@@ -35,7 +35,6 @@
 }
 
 .btn {
-  display: inline-block;
   line-height: 1.5;
   color: #1a1a1d;
   text-decoration: none;
