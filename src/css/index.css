@@ -172,8 +172,8 @@ footer {
 }
 
 .intro h2 {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   font-size: 2.5rem;
   overflow: hidden;
