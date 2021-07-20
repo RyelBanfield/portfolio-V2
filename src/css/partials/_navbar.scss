@@ -51,3 +51,9 @@ nav {
     margin: 0 0.6rem;
   }
 }
+
+@media (max-width: 768px) {
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+}

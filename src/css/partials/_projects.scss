@@ -69,3 +69,19 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 4%;
+  }
+
+  .projects-header {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+    }
+  }
+}

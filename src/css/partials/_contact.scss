@@ -147,3 +147,22 @@ button {
     font-size: 1.25rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .contact-header {
+    width: 80%;
+    line-height: 1.5rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  form {
+    width: 60%;
+  }
+}
