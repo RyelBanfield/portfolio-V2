@@ -17,11 +17,11 @@
   align-items: center;
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   a {
@@ -34,5 +34,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 1440px) {
+  .projects-container {
+    padding: 2%;
+  }
+
+  .projects-header {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
 }

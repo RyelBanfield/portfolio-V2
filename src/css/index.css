@@ -38,12 +38,16 @@ nav {
 }
 
 .nav-icon {
-  margin: 0 5px;
+  margin-left: 0.25rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
+  nav {
+    min-height: 5rem;
+    font-size: 1.2rem;
+  }
   .nav-item {
-    margin: 0 15px;
+    margin: 0 0.8rem;
   }
 }
 
@@ -89,6 +93,19 @@ footer {
   color: #727272;
   text-align: center;
   margin-top: 0.5rem;
+}
+
+@media (max-width: 1440px) {
+  footer {
+    min-height: 6rem;
+    font-size: 0.95rem;
+  }
+  .footer-item {
+    margin: 0 0.55rem;
+  }
+  .footer-icon {
+    font-size: 1.25rem;
+  }
 }
 
 .home {
@@ -220,7 +237,7 @@ footer {
   padding: 0.375rem 0.75rem;
   font-size: 1.5rem;
   border-radius: 0.5rem;
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
 }
 
 .my-stack {
@@ -252,24 +269,31 @@ h3 {
   margin: 0.5rem 1.5rem;
 }
 
-@media (max-width: 1800px) {
-  .image {
-    width: 60%;
+@media (max-width: 1440px) {
+  .intro h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
-  .intro {
-    width: 75%;
+  .intro h2 {
+    font-size: 1.5rem;
+    margin: 1rem auto;
   }
-}
-
-@media (max-width: 1620px) {
-  .image {
-    width: 70%;
+  .intro p {
+    font-size: 1.25rem;
   }
-}
-
-@media (max-width: 1458px) {
-  .image {
-    width: 80%;
+  .intro .projects-btn {
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .stack {
+    margin: 1rem 0;
+  }
+  .stack-item {
+    margin: 0.25rem 1rem;
   }
 }
 
@@ -313,11 +337,11 @@ h3 {
 }
 
 .projects-header h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .projects-header p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .projects-header a {
@@ -334,13 +358,24 @@ h3 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 1440px) {
+  .projects-container {
+    padding: 2%;
+  }
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+  .projects-header p {
+    font-size: 1.5rem;
+  }
 }
 
 .project {
-  width: 40%;
-  max-width: 500px;
-  margin-bottom: 100px;
+  width: 30%;
+  margin-bottom: 6rem;
 }
 
 .screenshot {
@@ -349,7 +384,7 @@ h3 {
 
 .project-info {
   height: 100%;
-  max-height: 175px;
+  max-height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,13 +398,14 @@ h3 {
 }
 
 .info h2 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 1rem 0;
 }
 
 .info p {
-  font-size: 1.05rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .project-links {
@@ -388,8 +424,27 @@ h3 {
   background-color: #c3073f;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 1440px) {
+  .project {
+    margin-bottom: 3rem;
+  }
+  .project-info {
+    max-height: 200px;
+  }
+  .info h2 {
+    font-size: 1.25rem;
+  }
+  .info p {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1rem;
+    border-radius: 0.25rem;
+  }
 }
 
 .about {
@@ -410,13 +465,24 @@ h3 {
 }
 
 .content h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .content p {
-  font-size: 1.25em;
-  margin-bottom: 20px;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1440px) {
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
 }
 
 .contact {
@@ -436,24 +502,24 @@ h3 {
 }
 
 .contact-header {
-  width: 60%;
-  max-width: 750px;
+  width: 45%;
   text-align: center;
-  margin-bottom: 2.5em;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .contact-header h1 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
 }
 
 .contact-header p {
-  font-size: 1.25em;
+  font-size: 1.75rem;
 }
 
 form {
-  width: 50%;
-  max-width: 600px;
+  width: 60%;
+  max-width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,14 +529,10 @@ form {
           flex-direction: column;
 }
 
-label {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
 input {
-  font-size: 1.25rem;
-  padding: 10px;
+  font-size: 1.75rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
   margin-bottom: 0.75rem;
 }
 
@@ -479,7 +541,8 @@ textarea {
   max-width: 100%;
   min-height: 250px;
   max-height: 250px;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
+  border-radius: 0.5rem;
   padding: 10px;
   margin-bottom: 0.75rem;
 }
@@ -492,8 +555,8 @@ button {
   background-color: #c3073f;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
+  font-size: 1.75rem;
+  border-radius: 0.5rem;
 }
 
 .success-message {
@@ -508,7 +571,45 @@ button {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 1440px) {
+  .contact-header {
+    width: 45%;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+  .contact-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .contact-header p {
+    font-size: 1.25rem;
+  }
+  form {
+    width: 40%;
+  }
+  input {
+    font-size: 1.25rem;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  textarea {
+    min-height: 250px;
+    max-height: 250px;
+    font-size: 1.25rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+  button {
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+  }
+  .success-message {
+    font-size: 1.5rem;
+  }
 }
 
 * {
@@ -518,7 +619,6 @@ button {
           box-sizing: border-box;
   border: 0;
   outline: 0;
-  outline: 1px dotted gray;
   vertical-align: baseline;
   font-weight: inherit;
   font-family: inherit;

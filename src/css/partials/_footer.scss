@@ -30,3 +30,18 @@ footer {
   text-align: center;
   margin-top: 0.5rem;
 }
+
+@media (max-width: 1440px) {
+  footer {
+    min-height: 6rem;
+    font-size: 0.95rem;
+  }
+
+  .footer-item {
+    margin: 0 0.55rem;
+  }
+
+  .footer-icon {
+    font-size: 1.25rem;
+  }
+}

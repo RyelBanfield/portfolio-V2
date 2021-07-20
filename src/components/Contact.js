@@ -28,7 +28,6 @@ const Contact = () => {
         </p>
       </div>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name</label>
         <input
           type="text"
           name="name"
@@ -36,9 +35,6 @@ const Contact = () => {
           placeholder="Name"
           required
         />
-        <label htmlFor="email">
-          Your Email Address
-        </label>
         <input
           id="email"
           type="email"
