@@ -51,6 +51,16 @@ nav {
   }
 }
 
+@media (max-width: 1024px) {
+  nav {
+    min-height: 4.5rem;
+    font-size: 1rem;
+  }
+  .nav-item {
+    margin: 0 0.6rem;
+  }
+}
+
 footer {
   min-height: 7rem;
   background-color: #000;
@@ -105,6 +115,18 @@ footer {
   }
   .footer-icon {
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    font-size: 0.85rem;
+  }
+  .footer-item {
+    margin: 0 0.4rem;
+  }
+  .footer-icon {
+    font-size: 1rem;
   }
 }
 
@@ -297,6 +319,32 @@ h3 {
   }
 }
 
+@media (max-width: 1024px) {
+  .intro h1 {
+    font-size: 1.75rem;
+  }
+  .intro h2 {
+    margin: 1rem auto;
+  }
+  .intro p {
+    font-size: 1.15rem;
+  }
+  .intro .projects-btn {
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  .stack {
+    margin: 0.85rem 0;
+  }
+  .stack-item {
+    margin: 0.25rem 0.5rem;
+  }
+}
+
 .loading-screen {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,6 +418,19 @@ h3 {
   }
   .projects-header p {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects-container {
+    padding: 2%;
+    margin-top: 1rem;
+  }
+  .projects-header h1 {
+    font-size: 1.75rem;
+  }
+  .projects-header p {
+    font-size: 1.25rem;
   }
 }
 
@@ -447,6 +508,25 @@ h3 {
   }
 }
 
+@media (max-width: 1024px) {
+  .project {
+    margin-bottom: 4rem;
+  }
+  .project-info {
+    max-height: 180px;
+  }
+  .info h2 {
+    font-size: 1.1rem;
+  }
+  .info p {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+  }
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,6 +562,16 @@ h3 {
   .content p {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content h1 {
+    font-size: 1.5rem;
+  }
+  .content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.1rem;
   }
 }
 
@@ -609,6 +699,35 @@ button {
   }
   .success-message {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-header {
+    width: 65%;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact-header h1 {
+    font-size: 1.75rem;
+  }
+  .contact-header p {
+    font-size: 1.25rem;
+  }
+  form {
+    width: 40%;
+  }
+  input {
+    font-size: 1rem;
+  }
+  textarea {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  .success-message {
+    font-size: 1.25rem;
   }
 }
 

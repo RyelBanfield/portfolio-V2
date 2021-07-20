@@ -68,3 +68,28 @@
     border-radius: 0.25rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .project {
+    margin-bottom: 4rem;
+  }
+
+  .project-info {
+    max-height: 180px;
+  }
+
+  .info {
+    h2 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+  }
+}

@@ -45,3 +45,17 @@ footer {
     font-size: 1.25rem;
   }
 }
+
+@media (max-width: 1024px) {
+  footer {
+    font-size: 0.85rem;
+  }
+
+  .footer-item {
+    margin: 0 0.4rem;
+  }
+
+  .footer-icon {
+    font-size: 1rem;
+  }
+}

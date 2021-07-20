@@ -111,3 +111,39 @@ button {
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .contact-header {
+    width: 65%;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+  form {
+    width: 40%;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  textarea {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .success-message {
+    font-size: 1.25rem;
+  }
+}

@@ -52,3 +52,20 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .projects-container {
+    padding: 2%;
+    margin-top: 1rem;
+  }
+
+  .projects-header {
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}

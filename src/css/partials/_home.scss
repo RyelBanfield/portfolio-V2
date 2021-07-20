@@ -154,3 +154,37 @@ h3 {
     margin: 0.25rem 1rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .intro {
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    h2 {
+      margin: 1rem auto;
+    }
+
+    p {
+      font-size: 1.15rem;
+    }
+
+    .projects-btn {
+      font-size: 0.9rem;
+      border-radius: 0.25rem;
+      margin-top: 1rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .stack {
+    margin: 0.85rem 0;
+  }
+
+  .stack-item {
+    margin: 0.25rem 0.5rem;
+  }
+}
