@@ -9,6 +9,10 @@ nav {
 
 .menu-icon {
   display: none;
+
+  svg {
+    margin-bottom: -4px;
+  }
 }
 
 .nav-links {
@@ -49,6 +53,35 @@ nav {
 
 @media (max-width: 768px) {
   nav {
-    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 3rem;
+  }
+
+  .menu-icon {
+    display: block;
+    margin: 1rem auto 1rem 1rem;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-active {
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+  }
+
+  .nav-item {
+    margin: 0.75rem 0;
   }
 }

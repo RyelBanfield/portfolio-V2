@@ -18,6 +18,10 @@ nav {
   display: none;
 }
 
+.menu-icon svg {
+  margin-bottom: -4px;
+}
+
 .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,7 +63,46 @@ nav {
 
 @media (max-width: 768px) {
   nav {
-    font-size: 0.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 3rem;
+  }
+  .menu-icon {
+    display: block;
+    margin: 1rem auto 1rem 1rem;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-active {
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+  }
+  .nav-item {
+    margin: 0.75rem 0;
   }
 }
 
@@ -118,6 +161,16 @@ footer {
 @media (max-width: 1024px) {
   footer {
     min-height: 5rem;
+    font-size: 0.85rem;
+  }
+  .footer-icon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    min-height: 4rem;
     font-size: 0.85rem;
   }
   .footer-icon {
@@ -333,21 +386,32 @@ footer {
 
 @media (max-width: 768px) {
   .header {
-    width: 100%;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 2.5rem 0;
   }
+  .image-div {
+    margin-bottom: 1rem;
+  }
   .intro {
-    padding-right: 1rem;
+    width: 100%;
   }
   .intro h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   .intro h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0.75rem auto;
   }
   .intro p {
-    font-size: 1.1rem;
+    width: 80%;
+    font-size: 1rem;
+    margin: auto;
   }
   .intro .projects-btn {
     margin-top: 1.25rem;
@@ -360,11 +424,11 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 0;
+    margin: 0;
   }
   .my-stack .stack-header {
     font-size: 1.25rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem;
   }
   .my-stack .stack-item {
     margin: 0.25rem 0.5rem;

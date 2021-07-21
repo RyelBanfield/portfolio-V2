@@ -157,24 +157,31 @@
 
 @media (max-width: 768px) {
   .header {
-    width: 100%;
+    min-width: fit-content;
+    flex-direction: column;
     margin: 2.5rem 0;
   }
 
+  .image-div {
+    margin-bottom: 1rem;
+  }
+
   .intro {
-    padding-right: 1rem;
+    width: 100%;
 
     h1 {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       margin: 0.75rem auto;
     }
 
     p {
-      font-size: 1.1rem;
+      width: 80%;
+      font-size: 1rem;
+      margin: auto;
     }
 
     .projects-btn {
@@ -185,11 +192,11 @@
   .my-stack {
     display: flex;
     flex-direction: column;
-    margin-top: 0;
+    margin: 0;
 
     .stack-header {
       font-size: 1.25rem;
-      margin-bottom: 1.25rem;
+      margin-bottom: 0.75rem;
     }
 
     .stack-item {
