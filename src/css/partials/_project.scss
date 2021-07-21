@@ -74,11 +74,11 @@
 
 @media (max-width: 768px) {
   .project {
-    width: 45%;
+    width: 85%;
   }
 
   .project-info {
-    max-height: 160px;
+    max-height: 175px;
     margin-bottom: 0;
   }
 
@@ -86,17 +86,17 @@
     flex: 1;
 
     h2 {
-      font-size: 1rem;
+      font-size: 1.25rem;
       margin-top: 1rem;
     }
 
     p {
-      font-size: 0.9rem;
+      font-size: 1rem;
       margin-top: 1rem;
     }
   }
 
   .btn {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }

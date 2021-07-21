@@ -51,12 +51,17 @@
 
 @media (max-width: 768px) {
   .content {
+    width: 90%;
+    padding-top: 1.85rem;
+
     h1 {
       font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     p {
       font-size: 1.05rem;
+      margin-bottom: 1rem;
     }
   }
 }
