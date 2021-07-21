@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 nav {
-  min-height: 6rem;
+  min-height: 5rem;
   background-color: #000;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,6 @@ nav {
 
 @media (max-width: 1440px) {
   nav {
-    min-height: 5rem;
     font-size: 1.2rem;
   }
   .nav-item {
@@ -53,24 +52,20 @@ nav {
 
 @media (max-width: 1024px) {
   nav {
-    min-height: 4.5rem;
+    min-height: 4rem;
     font-size: 1rem;
-  }
-  .nav-item {
-    margin: 0 0.6rem;
   }
 }
 
 @media (max-width: 768px) {
-  .nav-item {
-    margin: 0 0.5rem;
+  nav {
+    font-size: 0.9rem;
   }
 }
 
 footer {
-  min-height: 7rem;
+  min-height: 6rem;
   background-color: #000;
-  font-size: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +89,7 @@ footer {
 
 .footer-item {
   list-style: none;
-  margin: 0 0.75rem;
+  margin: 0 0.5rem;
 }
 
 .footer-link {
@@ -102,7 +97,7 @@ footer {
 }
 
 .footer-icon {
-  font-size: 1.5rem;
+  font-size: 1.15rem;
 }
 
 .copyright {
@@ -113,23 +108,17 @@ footer {
 
 @media (max-width: 1440px) {
   footer {
-    min-height: 6rem;
     font-size: 0.95rem;
   }
-  .footer-item {
-    margin: 0 0.55rem;
-  }
   .footer-icon {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 1024px) {
   footer {
+    min-height: 5rem;
     font-size: 0.85rem;
-  }
-  .footer-item {
-    margin: 0 0.4rem;
   }
   .footer-icon {
     font-size: 1rem;
@@ -153,7 +142,10 @@ footer {
 }
 
 .header {
-  width: 50%;
+  width: 60%;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,6 +155,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 5rem 0;
 }
 
 .image-div {
@@ -179,7 +172,7 @@ footer {
 }
 
 .image {
-  width: 55%;
+  width: 40%;
   background-image: url("/src/assets/ProPic.png");
   background-position: center;
   background-size: cover;
@@ -195,19 +188,18 @@ footer {
 }
 
 .intro h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
 }
 
 .intro h2 {
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content;
-  font-size: 2.5rem;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  font-size: 1.75rem;
   overflow: hidden;
   border-right: 0.15em solid white;
   white-space: nowrap;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   letter-spacing: 0.1em;
   -webkit-animation: typing 4s steps(40, end), blink-cursor 0.75s step-end infinite;
           animation: typing 4s steps(40, end), blink-cursor 0.75s step-end infinite;
@@ -252,7 +244,7 @@ footer {
 }
 
 .intro p {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 .intro .projects-btn {
@@ -263,21 +255,33 @@ footer {
   background-color: #c3073f;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   margin-top: 1.5rem;
 }
 
 .my-stack {
-  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4rem;
 }
 
-h3 {
-  font-size: 2rem;
+.my-stack .stack-div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.stack {
+.my-stack .stack-header {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-stack .stack-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,120 +293,81 @@ h3 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 1.25rem 0;
 }
 
-.stack-item {
+.my-stack .stack-item {
   list-style: none;
-  margin: 0.5rem 1.5rem;
+  margin: 0.5rem 0.75rem;
 }
 
 @media (max-width: 1440px) {
-  .header {
-    width: 65%;
+  .my-stack {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2rem;
   }
-  .intro h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  .intro h2 {
-    font-size: 1.5rem;
-    margin: 1rem auto;
-  }
-  .intro p {
+  .my-stack .stack-header {
     font-size: 1.25rem;
-  }
-  .intro .projects-btn {
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    margin-top: 1rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  .stack {
-    margin: 1rem 0;
-  }
-  .stack-item {
-    margin: 0.25rem 1rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media (max-width: 1024px) {
   .header {
-    width: 80%;
-  }
-  .image-div {
-    width: 50%;
-  }
-  .image {
     width: 60%;
+    margin: 4rem 0;
   }
-  .intro {
-    width: 50%;
+  .my-stack {
+    margin-top: 0;
   }
-  .intro h1 {
-    font-size: 1.75rem;
-  }
-  .intro h2 {
-    margin: 1rem auto;
-  }
-  .intro p {
-    font-size: 1.15rem;
-  }
-  .intro .projects-btn {
-    font-size: 0.9rem;
-    border-radius: 0.25rem;
-    margin-top: 1rem;
-  }
-  h3 {
-    font-size: 1.25rem;
-  }
-  .stack {
-    margin: 0.85rem 0;
-  }
-  .stack-item {
-    margin: 0.25rem 0.5rem;
+  .my-stack .stack-header {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .header {
-    width: 90%;
-  }
-  .image-div {
-    width: 50%;
-  }
-  .image {
-    width: 50%;
+    width: 100%;
+    margin: 2.5rem 0;
   }
   .intro {
-    width: 50%;
+    padding-right: 1rem;
   }
   .intro h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .intro h2 {
     font-size: 1.5rem;
+    margin: 0.75rem auto;
   }
   .intro p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .intro .projects-btn {
-    font-size: 0.8rem;
+    margin-top: 1.25rem;
   }
   .my-stack {
-    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
   }
-  h3 {
-    font-size: 1.5rem;
+  .my-stack .stack-header {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
   }
-  .stack {
-    margin: 1rem 0;
-  }
-  .stack-item {
-    list-style: none;
-    margin: 0.25rem 1.25rem;
+  .my-stack .stack-item {
+    margin: 0.25rem 0.5rem;
   }
 }
 
@@ -446,11 +411,11 @@ h3 {
 }
 
 .projects-header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .projects-header p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .projects-header a {
@@ -470,35 +435,7 @@ h3 {
   margin-top: 3rem;
 }
 
-@media (max-width: 1440px) {
-  .projects-container {
-    padding: 2%;
-  }
-  .projects-header h1 {
-    font-size: 2rem;
-  }
-  .projects-header p {
-    font-size: 1.5rem;
-  }
-}
-
 @media (max-width: 1024px) {
-  .projects-container {
-    padding: 2%;
-    margin-top: 1rem;
-  }
-  .projects-header h1 {
-    font-size: 1.75rem;
-  }
-  .projects-header p {
-    font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .projects-container {
-    padding: 4%;
-  }
   .projects-header h1 {
     font-size: 1.5rem;
   }
@@ -507,9 +444,21 @@ h3 {
   }
 }
 
+@media (max-width: 768px) {
+  .projects-header {
+    margin-top: 1rem;
+  }
+  .projects-header h1 {
+    font-size: 1.35rem;
+  }
+  .projects-header p {
+    font-size: 1rem;
+  }
+}
+
 .project {
   width: 30%;
-  margin-bottom: 6rem;
+  margin-bottom: 4.75rem;
 }
 
 .screenshot {
@@ -518,7 +467,7 @@ h3 {
 
 .project-info {
   height: 100%;
-  max-height: 220px;
+  max-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,15 +480,21 @@ h3 {
           justify-content: space-between;
 }
 
+.info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .info h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
 .info p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  margin-top: 1rem;
 }
 
 .project-links {
@@ -558,44 +513,30 @@ h3 {
   background-color: #c3073f;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
-}
-
-@media (max-width: 1440px) {
-  .project {
-    margin-bottom: 3rem;
-  }
-  .project-info {
-    max-height: 200px;
-  }
-  .info h2 {
-    font-size: 1.25rem;
-  }
-  .info p {
-    font-size: 1.2rem;
-  }
-  .btn {
-    font-size: 1rem;
-    border-radius: 0.25rem;
-  }
+  font-size: 1rem;
+  border-radius: 0.25rem;
 }
 
 @media (max-width: 1024px) {
-  .project {
-    margin-bottom: 4rem;
-  }
   .project-info {
-    max-height: 180px;
+    max-height: 200px;
+    margin-bottom: 1rem;
+  }
+  .info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .info h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
   }
   .info p {
     font-size: 1rem;
+    margin-top: 1rem;
   }
   .btn {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border-radius: 0.25rem;
   }
 }
@@ -604,11 +545,25 @@ h3 {
   .project {
     width: 45%;
   }
+  .project-info {
+    max-height: 160px;
+    margin-bottom: 0;
+  }
+  .info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
   .info h2 {
     font-size: 1rem;
+    margin-top: 1rem;
   }
   .info p {
     font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  .btn {
+    font-size: 0.75rem;
   }
 }
 
@@ -630,18 +585,21 @@ h3 {
 }
 
 .content h1 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .content p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 @media (max-width: 1440px) {
+  .content {
+    width: 70%;
+  }
   .content h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
   }
   .content p {
@@ -652,17 +610,21 @@ h3 {
 
 @media (max-width: 1024px) {
   .content h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
   }
   .content p {
-    font-size: 1.1rem;
-    margin-bottom: 1.1rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 }
 
-@media (max-width: 1024px) {
-  .content {
-    width: 80%;
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 1.5rem;
+  }
+  .content p {
+    font-size: 1.05rem;
   }
 }
 
@@ -690,17 +652,16 @@ h3 {
 }
 
 .contact-header h1 {
-  font-size: 2.75rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .contact-header p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 form {
-  width: 60%;
-  max-width: 900px;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,8 +672,8 @@ form {
 }
 
 input {
-  font-size: 1.75rem;
-  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
   padding: 0.75rem;
   margin-bottom: 0.75rem;
 }
@@ -722,8 +683,8 @@ textarea {
   max-width: 100%;
   min-height: 250px;
   max-height: 250px;
-  font-size: 1.75rem;
-  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
   padding: 10px;
   margin-bottom: 0.75rem;
 }
@@ -736,8 +697,8 @@ button {
   background-color: #c3073f;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 1.75rem;
-  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
 }
 
 .success-message {
@@ -752,52 +713,14 @@ button {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 2rem;
-}
-
-@media (max-width: 1440px) {
-  .contact-header {
-    width: 45%;
-    line-height: 2rem;
-    margin-bottom: 2rem;
-  }
-  .contact-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-  }
-  .contact-header p {
-    font-size: 1.25rem;
-  }
-  form {
-    width: 40%;
-  }
-  input {
-    font-size: 1.25rem;
-    border-radius: 0.25rem;
-    padding: 0.75rem;
-    margin-bottom: 0.75rem;
-  }
-  textarea {
-    min-height: 250px;
-    max-height: 250px;
-    font-size: 1.25rem;
-    border-radius: 0.25rem;
-    margin-bottom: 0.75rem;
-  }
-  button {
-    font-size: 1.2rem;
-    border-radius: 0.25rem;
-  }
-  .success-message {
-    font-size: 1.5rem;
-  }
+  font-size: 1.75rem;
 }
 
 @media (max-width: 1024px) {
   .contact-header {
-    width: 65%;
-    line-height: 1.75rem;
-    margin-bottom: 1.5rem;
+    width: 50%;
+    line-height: 2rem;
+    margin-bottom: 2rem;
   }
   .contact-header h1 {
     font-size: 1.75rem;
@@ -806,23 +729,14 @@ button {
     font-size: 1.25rem;
   }
   form {
-    width: 40%;
-  }
-  input {
-    font-size: 1rem;
-  }
-  textarea {
-    font-size: 1rem;
-  }
-  button {
-    font-size: 1rem;
+    width: 45%;
   }
   .success-message {
     font-size: 1.25rem;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .contact-header {
     width: 80%;
     line-height: 1.5rem;
@@ -831,10 +745,16 @@ button {
     font-size: 1.5rem;
   }
   .contact-header p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
   form {
     width: 60%;
+  }
+  input {
+    font-size: 1.1rem;
+  }
+  textarea {
+    font-size: 1.1rem;
   }
 }
 
@@ -845,7 +765,6 @@ button {
           box-sizing: border-box;
   border: 0;
   outline: 0;
-  outline: 1px dotted gray;
   vertical-align: baseline;
   font-weight: inherit;
   font-family: inherit;

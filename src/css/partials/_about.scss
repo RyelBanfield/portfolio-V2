@@ -9,20 +9,22 @@
   text-align: center;
 
   h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 1440px) {
   .content {
+    width: 70%;
+
     h1 {
-      font-size: 2rem;
+      font-size: 1.75rem;
       margin-bottom: 1rem;
     }
 
@@ -36,18 +38,25 @@
 @media (max-width: 1024px) {
   .content {
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
     }
 
     p {
-      font-size: 1.1rem;
-      margin-bottom: 1.1rem;
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
     }
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .content {
-    width: 80%;
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+    }
   }
 }
