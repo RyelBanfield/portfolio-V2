@@ -2,7 +2,7 @@ export const getPinnedProjects = async () => {
   const response = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
-      Authorization: 'bearer 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',
+      Authorization: 'bearer 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',
     },
     body: JSON.stringify({
       query: `
@@ -39,7 +39,7 @@ export const getScreenshots = async (projects) => {
     const fileResponse = await fetch(url, {
       method: 'GET',
       headers: {
-        Authorization: 'bearer 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',
+        Authorization: 'bearer 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',
       },
     });
     const screenshotUrl = await fileResponse.json();
