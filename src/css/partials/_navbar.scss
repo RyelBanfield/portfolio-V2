@@ -70,15 +70,16 @@ nav {
   }
 
   .nav-links-active {
-    background-color: #000;
     width: 100%;
     height: 100vh;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 0;
+    font-size: 1.25rem;
   }
 
   .nav-item {
