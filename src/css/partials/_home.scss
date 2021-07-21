@@ -157,6 +157,9 @@
 
 @media (max-width: 768px) {
   .header {
+    min-width: -moz-fit-content;
+    min-width: -webkit-fit-content;
+    min-width: -webkit-fill-available;
     min-width: fit-content;
     flex-direction: column;
     margin: 2.5rem 0;

@@ -387,8 +387,9 @@ footer {
 
 @media (max-width: 768px) {
   .header {
-    min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
+    min-width: -webkit-fit-content;
+    min-width: -webkit-fill-available;
     min-width: fit-content;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
