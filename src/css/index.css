@@ -81,7 +81,7 @@ nav {
   .nav-links {
     display: none;
   }
-  .nav-links-active {
+  .mobile-links-active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -874,5 +874,28 @@ main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.fade-in {
+  -webkit-animation: fade-in-keyframes 0.5s;
+          animation: fade-in-keyframes 0.5s;
+}
+
+@-webkit-keyframes fade-in-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=index.css.map */

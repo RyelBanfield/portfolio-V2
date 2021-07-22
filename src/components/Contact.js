@@ -18,7 +18,7 @@ const Contact = () => {
   }
 
   return (
-    <main className="contact">
+    <main className="contact fade-in">
       <div className="contact-header">
         <h1>
           Want to contact me?

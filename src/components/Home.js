@@ -42,7 +42,7 @@ const technologies = {
 };
 
 const Home = () => (
-  <main className="home">
+  <main className="home fade-in">
     <div className="header">
       <div className="image-div">
         <div className="image" />

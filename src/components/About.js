@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 const About = () => (
-  <main className="about">
+  <main className="about fade-in">
     <div className="content">
       <h1>About Me 👨‍🦱</h1>
       <p>A Web Developer with an entrepreneurial mindset, a love for problem solving and ambitions of seeing the world while working remotely.</p>

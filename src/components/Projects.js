@@ -36,7 +36,7 @@ const Projects = () => {
   }
 
   return (
-    <main className="projects-container">
+    <main className="projects-container fade-in">
       <div className="projects-header">
         <h1>My Projects 🚀</h1>
         <br />

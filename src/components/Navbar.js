@@ -23,8 +23,12 @@ const links = [
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [fade, setFade] = useState(false);
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    setClick(!click);
+    setFade(!fade);
+  };
   const closeMobileMenu = () => setClick(false);
 
   return (
@@ -34,7 +38,7 @@ const Navbar = () => {
         <i>{click ? <FaTimes /> : <FaBars />}</i>
       </div>
 
-      <ul className={click ? 'nav-links-active' : 'nav-links'}>
+      <ul className={click ? 'mobile-links-active fade-in' : 'nav-links'}>
         {pages.map((page) => (
           <li className="nav-item" key={page.name}>
             <Link to={page.path} className="nav-link" onClick={closeMobileMenu}>
