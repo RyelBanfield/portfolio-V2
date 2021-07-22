@@ -1,11 +1,12 @@
 import {
-  FaGithub, FaLinkedin, FaTwitter, FaMedium,
+  FaGithub, FaLinkedin, FaTwitter, FaDev, FaMedium,
 } from 'react-icons/fa';
 
 const links = [
   { name: 'Github', url: 'https://github.com/RyelBanfield', icon: <FaGithub /> },
   { name: 'Linkedin', url: 'https://www.linkedin.com/in/ryel-banfield/', icon: <FaLinkedin /> },
   { name: 'Twitter', url: 'https://twitter.com/RyelBanfield', icon: <FaTwitter /> },
+  { name: 'Dev', url: 'https://dev.to/ryelbanfield/', icon: <FaDev /> },
   { name: 'Medium', url: 'https://ryelbanfield.medium.com/', icon: <FaMedium /> },
 ];
 
