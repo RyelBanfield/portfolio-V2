@@ -1,7 +1,7 @@
 .loading-screen {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .projects-container {
@@ -11,10 +11,10 @@
 }
 
 .projects-header {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   h1 {
     font-size: 2rem;
