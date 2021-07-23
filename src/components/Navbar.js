@@ -23,13 +23,12 @@ const links = [
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [fade, setFade] = useState(false);
 
   const handleClick = () => {
     setClick(!click);
-    setFade(!fade);
   };
-  const closeMobileMenu = () => setClick(false);
+
+  const closeMobileMenu = () => setClick(!click);
 
   return (
     <nav>
