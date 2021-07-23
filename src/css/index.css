@@ -314,9 +314,6 @@ footer {
 }
 
 .my-stack {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,11 +391,14 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 2.25rem 0;
-    min-width: -moz-fit-content;
-    min-width: -webkit-fill-available;
-    min-width: -webkit-fit-content;
-    min-width: fit-content;
+    margin: 1.5rem 0 1.25rem;
+    width: auto;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
   }
   .image-div {
     margin-bottom: 1rem;

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { useSpring, animated } from 'react-spring';
 import HTMLSVG from '../assets/images/HTML5.svg';
 import CSSSVG from '../assets/images/CSS3.svg';
 import SASSSVG from '../assets/images/Sass.svg';
@@ -42,67 +41,53 @@ const technologies = {
   ],
 };
 
-const Home = () => {
-  const props = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    config: {
-      duration: 1500,
-    },
-  });
+const Home = () => (
+  <main className="home fade-in">
+    <div className="header">
+      <div className="image-div">
+        <div className="image" />
+      </div>
+      <div className="intro">
+        <h1>Ryel Banfield 👨‍💻</h1>
+        <h2>Web Developer</h2>
+        <p>Passionate about solving problems, seeing the world and working remotely.</p>
+        <Link to="/projects" className="projects-btn">View My Work</Link>
+      </div>
+    </div>
 
-  return (
-    <animated.div style={props}>
-
-      <main className="home fade-in">
-        <div className="header">
-          <div className="image-div">
-            <div className="image" />
-          </div>
-          <div className="intro">
-            <h1>Ryel Banfield 👨‍💻</h1>
-            <h2>Web Developer</h2>
-            <p>Passionate about solving problems, seeing the world and working remotely.</p>
-            <Link to="/projects" className="projects-btn">View My Work</Link>
-          </div>
-        </div>
-
-        <div className="my-stack">
-          <div className="stack-div">
-            <h3 className="stack-header">What do I love working with?</h3>
-            <ul className="stack-items">
-              {technologies.love.map((technology) => (
-                <li className="stack-item" key={technology.name}>
-                  <img className="stack-image" src={technology.src} alt={technology.name} />
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="stack-div">
-            <h3 className="stack-header">What do I know how to work with?</h3>
-            <ul className="stack-items">
-              {technologies.know.map((technology) => (
-                <li className="stack-item" key={technology.name}>
-                  <img className="stack-image" src={technology.src} alt={technology.name} />
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="stack-div">
-            <h3 className="stack-header">What am I learning to work with?</h3>
-            <ul className="stack-items">
-              {technologies.learning.map((technology) => (
-                <li className="stack-item" key={technology.name}>
-                  <img className="stack-image" src={technology.src} alt={technology.name} />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </main>
-
-    </animated.div>
-  );
-};
+    <div className="my-stack">
+      <div className="stack-div">
+        <h3 className="stack-header">What do I love working with?</h3>
+        <ul className="stack-items">
+          {technologies.love.map((technology) => (
+            <li className="stack-item" key={technology.name}>
+              <img className="stack-image" src={technology.src} alt={technology.name} />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="stack-div">
+        <h3 className="stack-header">What do I know how to work with?</h3>
+        <ul className="stack-items">
+          {technologies.know.map((technology) => (
+            <li className="stack-item" key={technology.name}>
+              <img className="stack-image" src={technology.src} alt={technology.name} />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="stack-div">
+        <h3 className="stack-header">What am I learning to work with?</h3>
+        <ul className="stack-items">
+          {technologies.learning.map((technology) => (
+            <li className="stack-item" key={technology.name}>
+              <img className="stack-image" src={technology.src} alt={technology.name} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </main>
+);
 
 export default Home;

@@ -97,13 +97,12 @@
 }
 
 .my-stack {
-  align-items: center;
+  // align-items: center;
   display: flex;
   flex: 1;
   margin-top: 4rem;
   text-align: center;
 
-  //
   .stack-div {
     flex: 1;
   }
@@ -159,11 +158,10 @@
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    margin: 2.25rem 0;
-    min-width: -moz-fit-content;
-    min-width: -webkit-fill-available;
-    min-width: -webkit-fit-content;
-    min-width: fit-content;
+    margin: 1.5rem 0 1.25rem;
+    width: auto;
+    min-width: min-content;
+    max-width: max-content;
   }
 
   .image-div {
