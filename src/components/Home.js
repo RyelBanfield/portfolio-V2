@@ -30,11 +30,11 @@ const technologies = {
     { name: 'Ruby on Rails', src: RubyOnRailsSVG },
     { name: 'SQLite', src: SQLiteSVG },
     { name: 'PostgreSQL', src: PostgreSQLSVG },
+    { name: 'Redux', src: ReduxSVG },
     { name: 'Heroku', src: HerokuSVG },
     { name: 'Netlify', src: NetlifySVG },
   ],
   learning: [
-    { name: 'Redux', src: ReduxSVG },
     { name: 'NodeJs', src: NodeSVG },
     { name: 'Express', src: ExpressSVG },
     { name: 'Mongo', src: MongoSVG },
