@@ -546,7 +546,8 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-height: 200px;
+  min-height: 225px;
+  max-height: 225px;
 }
 
 .info {
